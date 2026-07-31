@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+
+     <nav class="navbar">
+        <a href="index.html"><img src="image/logo.webp" alt="" class="navbar__logo"></a>
+        <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
+            <li><a href="village.html" class="navbar__link">عن القرية</a> </li>
+            <li><a href="team.html" class="navbar__link">عن الفريق</a></li>
+            <li class="navbar__link navbar__link--dropdown">
+                <a href="projects.html" class="navbar__link">المشاريع</a>
+                <ul class="navbar__dropdown">
+                    <li><a href="solidarity.html" class="navbar__link">المشاريع التكافلية</a></li>
+                    <li><a href="projects.html" class="navbar__link">المشاريع التنموية</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html" class="navbar__link">الاخبار</a></li>
+            <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
+            <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+            <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
+        </ul>
+        <a href="contribute.html" class="cta">ساهم معنا</a>
+    </nav>
+
+   
+    <main>
+      <!-- قسم المشاريع التنموية-->
+        <section style="padding: 3rem 1.5rem; background-color: var(--bg-light);">
+            
+            <!-- عنوان القسم -->
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 2.5rem; color: var(--primary-color);">المشاريع التنموية</h2>
+                <p style="font-size: 1.1rem; color: var(--text-dark); opacity: 0.7;">نحو تنمية مستدامة في قرية المشاوز</p>
+            </div>
+
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                
+                
+                <article class="card-project"> 
+                    
+                    <!-- صورة المشروع -->
+                    <figure class="card-image"> 
+                       
+                        <img src="images/agriculture-project.jpg" alt="مشروع توزيع البذور والمعدات الزراعية">
+                    </figure>
+
+                    <!-- محتوى البطاقة -->
+                    <div class="card-body">
+                        <h3>مشروع الدعم الزراعي</h3>
+                        <p>
+                            توزيع البذور المحسّنة والمعدات الزراعية على المزارعين في قرية المشاوز 
+                            لزيادة الإنتاجية وتحقيق الأمن الغذائي.
+                        </p>
+                        <!-- زر "اقرأ المزيد" (الرابط # يعني لا يذهب لمكان حالياً) -->
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+
+                </article>
+                <!-- ===== نهاية البطاقة الأولى ===== -->
+
+                <!-- يمكنكِ تكرار البطاقة أعلاه عدة مرات لملء الصفحة بشكل جميل -->
+                <!-- مثلاً، انسخ نفس الـ <article> وألصقه هنا مرتين أخريين -->
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/education-project.jpg" alt="مشروع دعم التعليم وتأهيل الفصول">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع دعم التعليم</h3>
+                        <p>تأهيل الفصول الدراسية وتوفير المستلزمات المدرسية لأطفال القرية لضمان استمرار تعليمهم.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/water-project.jpg" alt="مشروع حفر آبار المياه في قرية المشاوز">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع توفير المياه</h3>
+                        <p>حفر آبار جديدة وصيانة شبكات المياه لتوفير مياه الشرب النظيفة لجميع سكان القرية.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+                
+
+            </div> <!-- نهاية شبكة البطاقات -->
+        </section>
+    </main>
+
+
+
+</body>
+</html>
