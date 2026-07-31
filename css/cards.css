@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* ===== تصميم البطاقة الأساسية (Card Project) ===== */
+.card-project {
+    background-color: var(--bg-light, #F5F5F5);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== تنسيق إطار الصورة ===== */
+.card-project .card-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--primary-light);
+    overflow: hidden;
+}
+
+.card-project .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* ===== تنسيق جسم البطاقة (العنوان والوصف والزر) ===== */
+.card-project .card-body {
+    padding: 1.5rem 1.2rem 1.8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.card-project .card-body h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color, #2E7D32);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.card-project .card-body p {
+    font-size: 1rem;
+    color: var(--text-dark, #212121);
+    line-height: 1.7;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-bottom: 0.5rem;
+    flex: 1;
+}
+
+/* ===== الزر الأساسي ===== */
+.card-project .btn-more {
+    align-self: flex-start;
+    background-color: var(--secondary-color, #1565C0);
+    color: var(--text-light, #FAFAFA);
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+    -webkit-tap-highlight-color: transparent; /* إلغاء التظليل الأزرق على الجوال */
+}
+
+/* ===== تأثير الضغط (يعمل على الكمبيوتر والجوال معاً) ===== */
+.card-project .btn-more:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+/* ============================================================
+   جميع تأثيرات التمرير (Hover) - تعمل فقط على أجهزة الكمبيوتر
+   ============================================================ */
+@media (hover: hover) {
+    
+    /* تأثير تمرير البطاقة بالكامل */
+    .card-project:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    /* تأثير تمرير الصورة (التكبير) */
+    .card-project:hover .card-image img {
+        transform: scale(1.05);
+    }
+
+    /* تأثير تمرير الزر (التحول للأخضر والتكبير) */
+    .card-project .btn-more:hover {
+        background-color: var(--primary-color, #2E7D32);
+        transform: scale(1.03);
+        box-shadow: 0 6px 12px rgba(21, 101, 192, 0.3);
+    }
+}
+
+/* ===== جعل البطاقة متجاوبة مع شاشة الجوال ===== */
+@media (max-width: 600px) {
+    .card-project {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .card-project .card-image {
+        height: 180px;
+    }
+
+    .card-project .card-body h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-project .card-body p {
+        font-size: 0.95rem;
+    }
+
+    .card-project .btn-more {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        align-self: stretch; /* لجعل الزر ممتداً بالكامل في الجوال */
+    }
+}
