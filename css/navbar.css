@@ -1,21 +1,4 @@
 /*Start navbar */
-:root {
-    --primary-color: #2E7D32;
-    --accent-color: #F9A825;
-    --text-light: #FAFAFA;
-    --font-family: 'Tajawal', sans-serif;
-}
-
-body {
-    margin: 0;
-    font-family: var(--font-family);
-}
-
-.tajawal-regular {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 .navbar {
     width: auto;

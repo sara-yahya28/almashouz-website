@@ -1,0 +1,71 @@
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero__image {
+    width: 100%;
+    display: block;
+}
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero__title {
+    position: absolute;
+    top: 211px;
+    right: 125px;
+    transform: translate(-25%, 10%);
+    color: var(--text-light);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.hero__text {
+    position: absolute;
+    top: 275px;
+    right: 400px;
+    color: var(--text-light);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.hero__btn {
+    position: absolute;
+    top: 325px;
+    right: 725px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    padding: 15px 30px;
+
+    color: var(--text-light);
+    background-color: var(--accent-color);
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hero__btn:hover {
+    background-color: #f9a8258f;
+    transition: 0.3s;
+}
