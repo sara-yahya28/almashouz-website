@@ -1,4 +1,20 @@
+:root {
+    --primary-color: #2E7D32;
+    --primary-light: #4CAF50;
+    --secondry-color: #1565C0;
+    --accent-color: #F9A825;
+    --text-dark: #212121;
+    --text-light: #FAFAFA;
+    --bg-color: #FAFAFA;
+    --bg-dark: #1B2A1B;
+    --font-family: 'Tajawal', sans-serif;
+}
+
 /* Start Hero Section */
+body {
+    font-family: var(--font-family);
+}
+
 .hero {
     width: 100%;
     position: relative;
@@ -61,5 +77,103 @@
 
 .hero__btn:hover {
     background-color: #f9a8258f;
+    transition: 0.3ms;
+}
+
+/* Start Welcome */
+.welcome {
+    display: flex;
+    margin: 15px 30px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header,
+.subtitle {
+    height: 50%;
+    text-align: center;
+}
+
+.header {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    opacity: 0.7;
+}
+
+
+.title-dividor {
+    width: 90%;
+    height: 2PX;
+    background-color: var(--accent-color);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.welcome__body {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.welcome__content {
+    margin-right: 50px;
+    width: 35%;
+}
+
+.welcome__text {
+    padding: 20px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    width: 457px;
+    font-weight: 500;
+    border: 2px solid var(--accent-color);
+}
+
+.welcome__image {
+    width: 550px;
+    margin-top: 15px;
+    border: 2px solid var(--secondry-color);
+}
+
+.welcome__list {
+    list-style: none;
+    background-color: var(--bg-dark);
+    border-radius: 15px;
+    width: 450px;
+    padding: auto;
+}
+
+.welcome-listTitle {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.welcome__bulletPoints {
+    font-weight: 500;
+}
+
+.welcome__ctaLink {
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 15px;
+    background-color: var(--bg-dark);
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid var(--accent-color);
+    margin: auto;
+}
+
+.welcome__ctaLink:hover {
+    opacity: 0.9;
     transition: 0.3ms;
 }

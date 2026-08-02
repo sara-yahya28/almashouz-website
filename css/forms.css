@@ -3,7 +3,13 @@
     box-sizing: border-box;
 }
 
-/*  الحاوية الرئيسية للنموذج */
+/* 2. تحويل الـ body لنظام Flex ليمتد بكامل الشاشة ويشد الفوتر للقاع */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية الرئيسية للنموذج */
 .form-container {
     max-width: 750px;
     margin: 40px auto;
@@ -14,7 +20,7 @@
     border: 1px solid #eef0f2;
 }
 
-/*  ترويسة النموذج */
+/* ترويسة النموذج */
 .form-header {
     text-align: center;
     margin-bottom: 30px;
@@ -137,12 +143,3 @@
         gap: 20px;
     }
 }
-
-
-
-
-
-
-
-
-

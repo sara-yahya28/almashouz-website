@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- ملف تنسيق النماذج الاستمارة الخاص بكِ -->
+    <!-- ملف تنسيق النماذج الخاص بكِ -->
     <link rel="stylesheet" href="css/forms.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,38 +38,38 @@
             </li>
             <li><a href="news.html" class="navbar__link">الاخبار</a></li>
             <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
-            <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+            <li><a href="contact.html" class="navbar__link navbar__link--active">تواصل معنا</a></li>
             <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
         </ul>
         <a href="contribute.html" class="cta">ساهم معنا</a>
     </nav>
 
-    <!-- Start Main Form Content -->
+    <!-- Start Main Contact Content -->
     <main class="form-container">
         <div class="form-header">
-            <h2>استمارة المساهمة والتبرع</h2>
+          <h2>استمارة المساهمة والتبرع</h2>
             <p>مساهمتك تساهم في دعم مشاريع التنمية والتكافل في قرية المشاوز</p>
         </div>
 
         <form action="#" method="POST" class="custom-form">
             
-            <div class="form-group">
+          <div class="form-group">
                 <label for="fullname">الاسم الكامل </label>
                 <input type="text" id="fullname" name="fullname" placeholder="أدخل اسمك الثلاثي أو الرباعي" required>
-            </div>
 
-            <div class="form-group-row">
+           <div class="form-group-row">
                 <div class="form-group">
                     <label for="phone">رقم الهاتف </label>
                     <input type="tel" id="phone" name="phone" placeholder="7XXXXXXXX" required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">البريد الإلكتروني</label>
                     <input type="email" id="email" name="email" placeholder="example@domain.com">
                 </div>
             </div>
 
-            <div class="form-group-row">
+          <div class="form-group-row">
                 <div class="form-group">
                     <label for="contribution-type">نوع المساهمة </label>
                     <select id="contribution-type" name="contribution_type" required>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="amount">مبلغ التبرع (إن وجد)</label>
+                    <label for="amount">مبلغ التبرع</label>
                     <input type="number" id="amount" name="amount" placeholder="المبلغ بالريال اليمني">
                 </div>
             </div>

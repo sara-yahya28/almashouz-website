@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
-
+/* ===== آخر تحديث: تحسين تنظيم الكود ===== */
 * {
     margin: 0;
     padding: 0;
@@ -99,18 +99,15 @@ body {
    ============================================================ */
 @media (hover: hover) {
     
-    /* تأثير تمرير البطاقة بالكامل */
     .card-project:hover {
         transform: translateY(-8px);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
     }
 
-    /* تأثير تمرير الصورة (التكبير) */
     .card-project:hover .card-image img {
         transform: scale(1.05);
     }
 
-    /* تأثير تمرير الزر (التحول للأخضر والتكبير) */
     .card-project .btn-more:hover {
         background-color: var(--primary-color, #2E7D32);
         transform: scale(1.03);
@@ -144,4 +141,45 @@ body {
         text-align: center;
         align-self: stretch; /* لجعل الزر ممتداً بالكامل في الجوال */
     }
+}
+/* ========================================
+   تنسيقات عناوين الأقسام (مشتركة بين الصفحات)
+   ======================================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color, #2E7D32);
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: var(--text-dark, #212121);
+    opacity: 0.7;
+}
+
+/* ========================================
+   شبكة البطاقات
+   ======================================== */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   تنسيق القسم الخارجي للمشاريع
+   ======================================== */
+
+.projects-section {
+    padding: 3rem 1.5rem;
+    background-color: var(--bg-light, #F5F5F5);
 }

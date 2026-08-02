@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
@@ -45,13 +46,103 @@
         <div class="hero__overlay"></div>
         <img src="images/image2.jpg" class="hero__image" alt="">
         <div class="hero__content">
-            <h1 class="hero__title">معاً لبناء مستقبل أفضل وتنمية مستدامة لقرية المشاوز.</h1>
+            <h1 class="hero__title">معاً لبناء مستقبل أفضل وتنمية مستدامة .</h1>
             <p class="hero__text">نبتكر الحلول التنموية ونعزز روح التكافل الاجتماعي للارتقاء بقرية المشاوز نحو غدٍ أجمل
                 وأكثر استقراراً.</p>
             <button class="hero__btn">ساهم</button>
         </div>
     </div>
 
+    <!-- Start Welcome & Intro -->
+    <section class="welcome">
+        <h1 class="header">يداً بيد لبناء مستقبل أفضل </h1>
+        <p class="subtitle">تنمية مستدامة لقرية المشاوز</p>
+
+        <div class="welcome__body">
+            <div class="welcome__content">
+                <p class="welcome__text">
+                    <span class="welcome-listTitle"> مبادرتنا و رسالتنا</span><br>
+                    صندوق المشاوز التكافلي التنموي هو مبادرة مجتمعية تهدف إلى دعم الاستدامة
+                    والتكافل
+                    الاجتماعي في قرية المشاوز بمحافظة تعز، من خلال تنفيذ مشاريع تنموية وتقديم المساعدات التي تلبي
+                    احتياجات
+                    الأهالي
+                </p>
+                <p class="welcome__text">
+                    <span class="welcome-listTitle"> رؤيتنا و قيمنا</span><br>
+                    نؤمن بأن التكاتف المجتمعي هو الأساس للنهوض بالخدمات والبنية التحتية، ونحرص على
+                    إدارة
+                    كافة المبادرات بأعلى مستويات الحوكمة والشفافية لضمان وصول الدعم لمستحقيه وتحقيق أثر ملموس
+                </p>
+                <ul class="welcome__list welcome__text">
+                    <li class="welcome-listTitle">مجالات عملنا الأساسية</li>
+                    <li class="welcome__bulletPoints">دعم التكافل الاجتماعي والمساعدات الإنسانية </li>
+                    <li class="welcome__bulletPoints">تنفيذ مشاريع تنموية وتطوير البنية التحتية </li>
+                    <li class="welcome__bulletPoints">التزام تام بالشفافية والحوكمة في إدارة الموارد </li>
+                </ul>
+                <a href="about.html" class="welcome__ctaLink">تعرف على الصندوق أكثر</a>
+            </div>
+            <img src="images/welcome.jpg" class="welcome__image" alt="قرية مشاوز">
+        </div>
+    </section>
+    <div class="title-dividor"></div>
+
+    <!-- start Statistics -->
+    <main>
+        <!-- قسم المشاريع التنموية-->
+        <section style="padding: 3rem 1.5rem; background-color: var(--bg-light);">
+
+            <!-- عنوان القسم -->
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 class="header">المشاريع التنموية</h2>
+                <p class="subtitle">نحو تنمية مستدامة في قرية المشاوز</p>
+
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                <article class="card-project">
+                    <figure class="card-image">
+
+                        <img src="images/backPack.jpg" alt="مشروع توزيع حقائب  ">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع توزيع حقائب</h3>
+                        <p>
+تأهيل الفصول وتوفير المستلزمات المدرسية، ودعم المعلمين ببرامج تدريبية لضمان تعليم مستدام لأطفال القرية.                        </p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+
+                </article>
+                <!-- ===== نهاية البطاقة الأولى ===== -->
+
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/seedling.jpg" alt="مشروع زراعة شتلة زراعية   ">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع زراعة شتلة زراعية </h3>
+                        <p>توزيع بذور محسّنة ومعدات زراعية، وتدريب المزارعين على تقنيات الري الحديث لتعزيز الإنتاجية
+                            والأمن الغذائي.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/Stone sidewalk.jpg" alt="مشروع رصيف حجري">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع رصيف حجري </h3>
+                        <p>حفر آبار جديدة وصيانة شبكات المياه لتوفير مياه الشرب النظيفة لجميع سكان القرية.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+
+
+            </div> <!-- نهاية شبكة البطاقات -->
+        </section>
+    </main>
 
     <!-- Start Footer -->
     <footer class="footer">
