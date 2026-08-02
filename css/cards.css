@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
 /* ===== آخر تحديث: تحسين تنظيم الكود ===== */
 * {
     margin: 0;
@@ -67,6 +68,7 @@ body {
     opacity: 0.85;
     margin-bottom: 0.5rem;
     flex: 1;
+    margin-bottom: 0;
 }
 
 /* ===== الزر الأساسي ===== */
@@ -85,7 +87,8 @@ body {
     display: inline-block;
     letter-spacing: 0.3px;
     box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
-    -webkit-tap-highlight-color: transparent; /* إلغاء التظليل الأزرق على الجوال */
+    -webkit-tap-highlight-color: transparent;
+    /* إلغاء التظليل الأزرق على الجوال */
 }
 
 /* ===== تأثير الضغط (يعمل على الكمبيوتر والجوال معاً) ===== */
@@ -98,7 +101,7 @@ body {
    جميع تأثيرات التمرير (Hover) - تعمل فقط على أجهزة الكمبيوتر
    ============================================================ */
 @media (hover: hover) {
-    
+
     .card-project:hover {
         transform: translateY(-8px);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
@@ -139,9 +142,11 @@ body {
         font-size: 0.9rem;
         width: 100%;
         text-align: center;
-        align-self: stretch; /* لجعل الزر ممتداً بالكامل في الجوال */
+        align-self: stretch;
+        /* لجعل الزر ممتداً بالكامل في الجوال */
     }
 }
+
 /* ========================================
    تنسيقات عناوين الأقسام (مشتركة بين الصفحات)
    ======================================== */
@@ -182,4 +187,20 @@ body {
 .projects-section {
     padding: 3rem 1.5rem;
     background-color: var(--bg-light, #F5F5F5);
+}
+
+.card__stats {
+    width: 150px;
+    display: flex;
+    margin-top: 0px;
+    /* background-color: var(--primary-color); */
+}
+
+.card__text,.card__counter{
+    font-weight: 700;
+}
+
+.card__text {
+    margin: 0;
+    width: 50px;
 }
