@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن قرية المشاوز - صندوق المشاوز</title>
-
-    <!-- الخطوط + ملفات CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/village.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
 
+    <title>عن الصندوق</title>
 </head>
 
 <body>
-
-    <!-- ===== Navbar ===== -->
+    <!-- Start navbar -->
     <nav class="navbar">
-        <a href="index.html">
-            <img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo">
-        </a>
+        <a href="index.html"><img src="images/logo.webp" alt="" class="navbar__logo"></a>
         <ul class="navbar__menu">
             <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
-            <li><a href="village.html" class="navbar__link">عن القرية</a></li>
+            <li><a href="village.html" class="navbar__link">عن القرية</a> </li>
             <li><a href="team.html" class="navbar__link">عن الفريق</a></li>
             <li class="navbar__link navbar__link--dropdown">
                 <a href="projects.html" class="navbar__link">المشاريع</a>
@@ -38,21 +31,20 @@
                     <li><a href="projects.html" class="navbar__link">المشاريع التنموية</a></li>
                 </ul>
             </li>
-            <li><a href="news.html" class="navbar__link">الأخبار</a></li>
+            <li><a href="news.html" class="navbar__link">الاخبار</a></li>
             <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
             <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
             <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
         </ul>
         <a href="contribute.html" class="navbar__cta">ساهم معنا</a>
     </nav>
-
-    <!-- ===== عن القرية ===== -->
+    <!-- ===== عن الصندوق ===== -->
     <main>
 
         <!-- عنوان الصفحة -->
         <div class="section-title">
-            <h2>عن قرية المشاوز</h2>
-            <p>اكتشف جمال قرية المشاوز وتعرف على تاريخها العريق</p>
+            <h2>عن الصندوق </h2>
+            <p>تعرف على رؤية، رسالة، وأهداف صندوق المشاوز التكافلي التنموي</p>
         </div>
 
         <!-- ===== القسم 1: نبذة + صورة ===== -->
@@ -60,17 +52,17 @@
             <div class="village-about__content">
 
                 <div class="village-about__text">
-                    <h3>قرية المشاوز</h3>
+                    <h3>صندوق المشاوز التكافلي التنموي</h3>
                     <p>
-                        قرية المشاوز هي إحدى قرى محافظة تعز، الجمهورية اليمنية. تتميز بطبيعتها الخلابة وموقعها الاستراتيجي
-                        بين الجبال، وتعتبر من القرى ذات التاريخ العريق في التكافل الاجتماعي والتعاون بين أبنائها.
-                        تأسس صندوق المشاوز التكافلي التنموي انطلاقاً من روح التعاون هذه، ليكون داعماً للتنمية المستدامة
-                        والرعاية الاجتماعية في القرية.
+                        تأسس صندوق المشاوز كمبادرة مجتمعية تنموية تهدف إلى النهوض بقرية المشاوز وتحقيق الاستدامة في
+                        خدماتها الحيوية. يسعى الصندوق إلى تقديم نموذج رائد في العمل التنموي والتكافلي، من خلال الاستثمار
+                        في البنية التحتية، دعم التعليم والزراعة، وتوفير الدعم الاجتماعي للأسر الأكثر احتياجاً، وذلك تحت
+                        مظلة من الشفافية والمسؤولية المجتمعية.
                     </p>
                 </div>
 
                 <div class="village-about__img">
-                    <img src="images/hero.jpg" alt="صورة لقرية المشاوز">
+                    <img src="images/volunteer.jpg" alt="صورة لقرية المشاوز">
                 </div>
 
             </div>
@@ -79,37 +71,35 @@
         <!-- ===== القسم 2: الموقع والتاريخ ===== -->
         <div class="village-details">
 
-            <!-- بطاقة الموقع -->
             <div class="village-details__card">
-                <h4>الموقع</h4>
+                <h4>الرؤية</h4>
                 <p>
-                    تقع قرية المشاوز في مديرية ماوية، محافظة تعز، جنوب غرب اليمن. تبعد حوالي 30 كيلومتراً عن مركز
-                    المحافظة، وتحيط بها سلسلة جبلية جميلة، مما يجعلها وجهة زراعية وطبيعية مميزة.
+                    أن نكون النموذج المجتمعي الرائد في تحقيق التنمية المستدامة والتكافل الاجتماعي، لبناء مجتمع محلي
+                    متماسك ومكتفٍ ذاتياً في قرية المشاوز.
                 </p>
             </div>
 
-            <!-- بطاقة التاريخ -->
             <div class="village-details__card">
-                <h4> التاريخ</h4>
+                <h4>الرسالة</h4>
                 <p>
-                    تعود جذور قرية المشاوز إلى مئات السنين، حيث كانت محطة للتجارة والزراعة. اشتهرت بتعاون أبنائها
-                    في مواسم الحصاد ومواجهة الأزمات، وهو ما انعكس لاحقاً في تأسيس صندوق المشاوز كامتداد طبيعي
-                    لهذه الروح التكافلية الأصيلة.
+                    السعي الدؤوب للارتقاء بالقرية عبر تنمية البنية التحتية، تمكين القطاعات الحيوية كالتعليم والزراعة،
+                    وتوفير مظلة تكافلية دافئة تمس احتياجات الأهالي بشفافية وشراكة مجتمعية فاعلة.
                 </p>
             </div>
 
         </div>
 
-        <!-- ===== معرض الصور ===== -->
+        <!-- ===== القسم 3: معرض الصور ===== -->
+
         <div class="gallery-grid">
             <figure class="gallery-grid__item">
-                <img src="images/3.jpg" alt="منظر طبيعي">
+                <img src="images/sustainable.jpg" alt=" مشروع الزراعة والتنمية المستدامة في القرية">
             </figure>
             <figure class="gallery-grid__item">
-                <img src="images/4.jpg" alt="منظر جبلي">
+                <img src="images/donation.jpg" alt=" مبادرة توزيع الحقائب والمستلزمات المدرسية والتكافل الاجتماعي">
             </figure>
             <figure class="gallery-grid__item">
-                <img src="images/5.jpg" alt="منظر زراعي">
+                <img src="images/road.jpg" alt=" مشروع رصف الطرق وتأهيل البنية التحتية في قرية المشاوز">
             </figure>
         </div>
 

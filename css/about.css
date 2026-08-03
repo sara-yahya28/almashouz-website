@@ -1,0 +1,197 @@
+/* =============================================
+   village.css - تنسيقات صفحة "عن القرية"
+   ============================================= */
+
+/* ===== إضافة مسافة للعنوان الرئيسي ===== */
+.section-title {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--font-family);
+    margin-bottom: 2rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color, #2E7D32);
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: var(--text-dark, #212121);
+    opacity: 0.7;
+}
+
+/* ===== القسم 1: النبذة والصورة ===== */
+.village-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.village-about__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.village-about__text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.village-about__text h3 {
+    color: var(--primary-color, #2E7D32);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* خط زخرفي تحت العنوان */
+.village-about__text h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color, #F9A825);
+    margin-top: 0.5rem;
+    border-radius: 4px;
+}
+
+.village-about__text p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-dark, #212121);
+}
+
+.village-about__img {
+    flex: 1;
+    min-width: 280px;
+}
+
+.village-about__img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.village-about__img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== قسم الموقع والتاريخ (بطاقات خضراء) ===== */
+.village-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+/* البطاقة الجديدة (خضراء بالكامل) */
+.village-details__card {
+    background: #E8F5E9; /* أخضر فاتح جداً (مريح للعين) */
+    padding: 2rem 1.8rem;
+    border-radius: 20px;
+    border-top: 6px solid var(--primary-color, #2E7D32); /* شريط أخضر غامق في الأعلى */
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.08); /* ظل أخضر خفيف */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* عند تمرير الماوس (يرتفع ويصبح الظل أقوى) */
+.village-details__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(46, 125, 50, 0.15);
+    background: #C8E6C9; /* يصبح أخضر فاتح متوسط عند المرور */
+}
+
+/* عناوين البطاقات (الموقع والتاريخ) */
+.village-details__card h4 {
+    color: var(--primary-color, #2E7D32); /* أخضر غامق بدل الأزرق */
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* النص داخل البطاقة */
+.village-details__card p {
+    line-height: 1.9;
+    color: var(--text-dark, #212121);
+}
+
+/* ===== معرض الصور ===== */
+.gallery-title {
+    text-align: center;
+    color: var(--primary-color, #2E7D32);
+    font-size: 1.8rem;
+    margin: 0 1.5rem 2rem;
+    position: relative;
+}
+
+.gallery-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color, #F9A825);
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.gallery-grid__item {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: var(--bg-light);
+}
+
+/* تأثير التمرير على الصورة */
+.gallery-grid__item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.14);
+}
+
+.gallery-grid__item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-grid__item:hover img {
+    transform: scale(1.08);
+}
+
+/* ===== تجاوب الجوال ===== */
+@media (max-width: 600px) {
+    .gallery-grid__item img {
+        height: 200px;
+    }
+
+    .village-about__text h3 {
+        font-size: 1.6rem;
+    }
+
+    .village-about__text p {
+        font-size: 1rem;
+    }
+
+    .village-details__card {
+        padding: 1.5rem;
+    }
+}
