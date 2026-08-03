@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن قرية المشاوز - صندوق المشاوز</title>
+
+    <!-- الخطوط + ملفات CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/village.css">
+</head>
+
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo">
+        </a>
+        <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
+            <li><a href="village.html" class="navbar__link">عن القرية</a></li>
+            <li><a href="team.html" class="navbar__link">عن الفريق</a></li>
+            <li class="navbar__link navbar__link--dropdown">
+                <a href="projects.html" class="navbar__link">المشاريع</a>
+                <ul class="navbar__dropdown">
+                    <li><a href="solidarity.html" class="navbar__link">المشاريع التكافلية</a></li>
+                    <li><a href="projects.html" class="navbar__link">المشاريع التنموية</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html" class="navbar__link">الأخبار</a></li>
+            <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
+            <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+            <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
+        </ul>
+        <a href="contribute.html" class="cta">ساهم معنا</a>
+    </nav>
+
+    <!-- ===== عن القرية ===== -->
+    <main>
+
+        <!-- عنوان الصفحة -->
+        <div class="section-title">
+            <h2>عن قرية المشاوز</h2>
+            <p>اكتشف جمال قرية المشاوز وتعرف على تاريخها العريق</p>
+        </div>
+
+        <!-- ===== القسم 1: نبذة + صورة ===== -->
+        <section class="village-about">
+            <div class="village-about__content">
+
+                <div class="village-about__text">
+                    <h3>قرية المشاوز</h3>
+                    <p>
+                        قرية المشاوز هي إحدى قرى محافظة تعز، الجمهورية اليمنية. تتميز بطبيعتها الخلابة وموقعها الاستراتيجي
+                        بين الجبال، وتعتبر من القرى ذات التاريخ العريق في التكافل الاجتماعي والتعاون بين أبنائها.
+                        تأسس صندوق المشاوز التكافلي التنموي انطلاقاً من روح التعاون هذه، ليكون داعماً للتنمية المستدامة
+                        والرعاية الاجتماعية في القرية.
+                    </p>
+                </div>
+
+                <div class="village-about__img">
+                    <img src="images/hero.jpg" alt="صورة لقرية المشاوز">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== القسم 2: الموقع والتاريخ ===== -->
+        <div class="village-details">
+
+            <div class="village-details__card">
+                <h4>الموقع</h4>
+                <p>
+                    تقع قرية المشاوز في مديرية ماوية، محافظة تعز، جنوب غرب اليمن. تبعد حوالي 30 كيلومتراً عن مركز
+                    المحافظة، وتحيط بها سلسلة جبلية جميلة، مما يجعلها وجهة زراعية وطبيعية مميزة.
+                </p>
+            </div>
+
+            <div class="village-details__card">
+                <h4> التاريخ</h4>
+                <p>
+                    تعود جذور قرية المشاوز إلى مئات السنين، حيث كانت محطة للتجارة والزراعة. اشتهرت بتعاون أبنائها
+                    في مواسم الحصاد ومواجهة الأزمات، وهو ما انعكس لاحقاً في تأسيس صندوق المشاوز كامتداد طبيعي
+                    لهذه الروح التكافلية الأصيلة.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ===== القسم 3: معرض الصور ===== -->
+
+        <div class="gallery-grid">
+            <figure class="gallery-grid__item">
+                <img src="https://picsum.photos/seed/village1/600/400" alt="منظر طبيعي">
+            </figure>
+            <figure class="gallery-grid__item">
+                <img src="https://picsum.photos/seed/village2/600/400" alt="منظر جبلي">
+            </figure>
+            <figure class="gallery-grid__item">
+                <img src="https://picsum.photos/seed/village3/600/400" alt="منظر زراعي">
+            </figure>
+        </div>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <img src="images/logo.webp" class="footer__logo" alt="">
+
+        <div class="footer__container">
+            <h2 class="footer__title">صندوق المشاوز التكافلي التنموي</h2>
+            <div class="footer__bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026</p>
+            </div>
+        </div>
+
+        <div class="footer__pages">
+            <h3 class="footer__subtitle">روابط سريعة</h3>
+            <ul class="footer__link">
+                <li><a href="index.html" class="footer__link footer__link--active">الرئيسية</a></li>
+                <li><a href="about.html" class="footer__link footer__link--active">عن الصندوق</a></li>
+                <li><a href="village.html" class="footer__link footer__link--active">عن القرية</a></li>
+                <li><a href="governance.html" class="footer__link footer__link--active">الحوكمة</a></li>
+                <li><a href="news.html" class="footer__link footer__link--active">الأخبار</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contact">
+            <h3 class="footer__contact--title">تواصل معنا</h3>
+            <p class="footer__info">الهاتف : 780810312</p>
+            <p class="footer__info">الموقع : قرية المشاوز - محافظة تعز, اليمن</p>
+            <a href="mailto:info@mashoazfund.org" class="footer__info">info@mashoazfund.org</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
