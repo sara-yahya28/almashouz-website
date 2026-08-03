@@ -1,9 +1,9 @@
 /*Start navbar */
 .navbar {
-    width: auto;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
 }
@@ -15,15 +15,19 @@
 
 .navbar__menu {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
+    align-items: center;
 }
 
 .navbar__link,
 .navbar__cta {
     text-decoration: none;
     color: var(--text-light);
-    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .navbar__cta{
@@ -39,30 +43,72 @@ padding: 10px;
     border-radius: 15px;
 }
 
+/* Dropdown Container */
 .navbar__link--dropdown {
     position: relative;
 }
 
+/* Dropdown Menu Base Styles */
 .navbar__dropdown {
-    position: absolute;
     display: none;
+    position: absolute;
+    top: 100%; /* تظهر أسفل الزر مباشرة */
+    right: 50%;
+    transform: translateX(50%); /* لتوسيط القائمة المنسدلة أسفل كلمة المشاريع */
+    background-color: var(--primary-color);
+    min-width: 180px; /* عرض مرن يتسع للكلمات */
+    height: auto; /* ترك الارتفاع يتحدد تلقائياً حسب المحتوى */
+    padding: 10px 0;
+    margin: 0;
     list-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 
+/* إظهار القائمة عند التمرير */
 .navbar__link--dropdown:hover .navbar__dropdown {
-    text-align: center;
-    background-color: var(--primary-color);
-    width: 150px;
-    height: 50px;
-    padding: 15px;
-    gap: 15px;
-    border-radius: 15px;
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 3;
+    gap: 5px;
 }
 
+/* تنسيق عناصر القائمة المنسدلة */
+.navbar__dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-light);
+    text-decoration: none;
+    white-space: nowrap; /* منع التفاف النص */
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.navbar__dropdown li a:hover {
+    background-color: var(--primary-light);
+}
+
+/* --- تعديلات قائمة الموبايل / الهمبرجر --- */
+@media (max-width: 768px) {
+    .navbar__menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__link--dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* تحويل القائمة المنسدلة في الموبايل لتفتح بشكل تدفق عادي (Relatively) لمنع التداخل */
+    .navbar__dropdown {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.1); /* خلفية خفيفة لتمييز الفرعي عن الرئيسي */
+        width: 100%;
+        margin-top: 5px;
+    }
+}

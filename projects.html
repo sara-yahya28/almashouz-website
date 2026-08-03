@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -25,6 +26,14 @@
         <a href="index.html">
             <img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo">
         </a>
+          <!-- كود القائمة لشاشات الجوال (Hamburger Menu) -->
+    <input type="checkbox" id="menu-toggle" class="navbar__checkbox">
+    <a href="contribute.html" class="cta">ساهم معنا</a>
+    <label for="menu-toggle" class="navbar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
         <ul class="navbar__menu">
             <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
             <li><a href="village.html" class="navbar__link">عن القرية</a></li>
@@ -41,7 +50,6 @@
             <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
             <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
         </ul>
-        <a href="contribute.html" class="cta">ساهم معنا</a>
     </nav>
 
     <!-- ===== المحتوى الرئيسي ===== -->

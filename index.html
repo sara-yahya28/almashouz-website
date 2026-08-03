@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
+                <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -22,6 +24,14 @@
     <!-- Start navbar -->
     <nav class="navbar">
         <a href="index.html"><img src="images/logo.webp" alt="" class="navbar__logo"></a>
+          <!-- كود القائمة لشاشات الجوال (Hamburger Menu) -->
+    <input type="checkbox" id="menu-toggle" class="navbar__checkbox">
+    <a href="contribute.html" class="cta">ساهم معنا</a>
+    <label for="menu-toggle" class="navbar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
         <ul class="navbar__menu">
             <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
             <li><a href="village.html" class="navbar__link">عن القرية</a> </li>
@@ -89,12 +99,13 @@
 
     <!-- start Statistics -->
     <main>
+        <!-- قسم المشاريع التنموية-->
         <section style="padding: 3rem 1.5rem; background-color: var(--bg-light);">
 
             <!-- عنوان القسم -->
             <div style="text-align: center; margin-bottom: 2.5rem;">
-                <h2 class="header"> الانجازات</h2>
-                <p class="subtitle"> خطوات ملموسة وحصاد مستمر لنماء قرية المشاوز </p>
+                <h2 class="header">المشاريع التنموية</h2>
+                <p class="subtitle">نحو تنمية مستدامة في قرية المشاوز</p>
 
             </div>
 
@@ -102,15 +113,13 @@
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
                 <article class="card-project">
                     <figure class="card-image">
+
                         <img src="images/backPack.jpg" alt="مشروع توزيع حقائب  ">
                     </figure>
                     <div class="card-body">
                         <h3>مشروع توزيع حقائب</h3>
-                        <p> تأهيل الفصول وتوفير المستلزمات المدرسية، ودعم المعلمين ببرامج تدريبية. </p>
-                        <div class="card__stats">
-                            <p class="card__text">حقيبة مدرسية</p>
-                            <span class="card__counter" data-target="499">499</span>
-                        </div>
+                        <p>
+تأهيل الفصول وتوفير المستلزمات المدرسية، ودعم المعلمين ببرامج تدريبية لضمان تعليم مستدام لأطفال القرية.                        </p>
                         <a href="#" class="btn-more">اقرأ المزيد</a>
                     </div>
 
@@ -123,11 +132,8 @@
                     </figure>
                     <div class="card-body">
                         <h3>مشروع زراعة شتلة زراعية </h3>
-                        <p>توزيع بذور محسّنة ومعدات زراعية، وتدريب المزارعين على تقنيات الري الحديث .</p>
-                        <div class="card__stats">
-                            <p class="card__text"> شتلة زراعية</p>
-                            <span class="card__counter" data-target="34">34</span>
-                        </div>
+                        <p>توزيع بذور محسّنة ومعدات زراعية، وتدريب المزارعين على تقنيات الري الحديث لتعزيز الإنتاجية
+                            والأمن الغذائي.</p>
                         <a href="#" class="btn-more">اقرأ المزيد</a>
                     </div>
                 </article>
@@ -139,10 +145,6 @@
                     <div class="card-body">
                         <h3>مشروع رصيف حجري </h3>
                         <p>حفر آبار جديدة وصيانة شبكات المياه لتوفير مياه الشرب النظيفة لجميع سكان القرية.</p>
-                        <div class="card__stats">
-                            <p class="card__text">رصف حجري</p>
-                            <span class="card__counter" data-target="2323">2323</span>
-                        </div>
                         <a href="#" class="btn-more">اقرأ المزيد</a>
                     </div>
                 </article>

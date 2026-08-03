@@ -17,12 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
     <!-- Start navbar -->
     <nav class="navbar">
         <a href="index.html"><img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo"></a>
+        <!-- كود القائمة لشاشات الجوال (Hamburger Menu) -->
+    <input type="checkbox" id="menu-toggle" class="navbar__checkbox">
+    <a href="contribute.html" class="cta">ساهم معنا</a>
+    <label for="menu-toggle" class="navbar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
         <ul class="navbar__menu">
             <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
             <li><a href="village.html" class="navbar__link">عن القرية</a></li>
@@ -38,8 +47,9 @@
             <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
             <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
             <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
+            
         </ul>
-        <a href="contribute.html" class="cta">ساهم معنا</a>
+        
     </nav>
 
     <!-- Start News Content -->
