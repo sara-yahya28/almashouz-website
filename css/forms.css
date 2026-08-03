@@ -2,16 +2,21 @@
 * {
     box-sizing: border-box;
 }
-
+html {
+    height: 100%;
+}
 /* 2. تحويل الـ body لنظام Flex ليمتد بكامل الشاشة ويشد الفوتر للقاع */
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* الحاوية الرئيسية للنموذج */
 .form-container {
-    max-width: 750px;
+    max-width: 1200px;
     margin: 40px auto;
     background-color:var(--bg-color);
     padding: 35px 30px;
@@ -131,6 +136,17 @@ body {
 
 .submit-btn:active {
     transform: scale(0.99);
+}
+
+.bank-notice {
+    background-color:var(--bg-color);
+    border:var(bg --text-dark) 1px solid ;
+    color:var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.95rem;
 }
 
 /*  تجاوب النموذج مع شاشات الجوال */
