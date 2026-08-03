@@ -19,10 +19,16 @@
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 20px !important;
     }
+
+    .welcome__content {
+        width: 50%; /* توسيع المساحة المخصصة للنصوص */
+        margin-right: 0;
+    }
 }
 
-/* 2. الجوال (<= 768px) */
+/* 2. الجوال والشاشات الصغيرة (<= 768px) */
 @media screen and (max-width: 768px) {
+    /* --- الهيدر والقائمة (Navbar) --- */
     .navbar {
         position: relative;
         display: flex !important;
@@ -37,7 +43,7 @@
         display: inline-block !important;
         padding: 6px 12px !important;
         font-size: 0.8rem !important;
-        margin-right: auto !important; /* 👈 السحر هنا: يدفع الزر لليسار في RTL */
+        margin-right: auto !important; /* يدفع الزر لليسار في RTL */
         margin-left: 10px !important;  /* مسافة بين الزر والهامبرغر */
     }
 
@@ -96,7 +102,7 @@
         display: flex !important;
     }
 
-    /* تحويل الهامبرغر إلى (X) فوري بدون حركة */
+    /* تحويل الهامبرغر إلى (X) فوري */
     .navbar__checkbox:checked ~ .navbar__toggle span:nth-child(1) {
         transform: translateY(7.5px) rotate(45deg);
     }
@@ -107,7 +113,63 @@
         transform: translateY(-7.5px) rotate(-45deg);
     }
 
-    /* ترتيب باقي عناصر الصفحات والجوال */
+    /* --- قسم الهيرو والغلاف (Hero Section) --- */
+    .hero {
+        min-height: 75vh; /* يعطي ارتفاعاً مرناً ليحتوي الكلام كاملاً */
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__image {
+        min-height: 75vh;
+        object-fit: cover; /* منع تمطط أو تشوه الصورة */
+    }
+
+    .hero__content {
+        padding: 20px 15px;
+        justify-content: center;
+    }
+
+    .hero__title {
+        font-size: 1.35rem !important; /* تصغير العنوان الرئيسي ليناسب الجوال */
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .hero__text {
+        font-size: 0.88rem !important; /* تصغير حجم النص الوصفي */
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .hero__btn {
+        padding: 10px 24px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* --- قسم الترحيب (Welcome Section) --- */
+    .welcome__body {
+        flex-direction: column-reverse; /* وضع النصوص والبطاقات تحت الصورة */
+        align-items: center;
+        gap: 25px;
+    }
+
+    .welcome__content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .welcome__image {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    /* --- عناصر النموذج والبطاقات والفوتر --- */
     .form-container {
         width: 92% !important;
         margin: 20px auto !important;
@@ -125,6 +187,11 @@
     .governance-wrapper {
         grid-template-columns: 1fr !important;
         gap: 15px !important;
+    }
+
+    .cta__sec {
+        width: 92%;
+        max-width: 100%;
     }
 
     .footer {

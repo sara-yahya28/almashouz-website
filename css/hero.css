@@ -211,4 +211,5 @@
     box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
     color: var(--text-light);
     font-family: var(--font-family);
+    text-decoration: none;
 }
