@@ -10,11 +10,17 @@
     --font-family: 'Tajawal', sans-serif;
 }
 
-/* Start Hero Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-family);
 }
 
+/* Start Hero Section */
 .hero {
     width: 100%;
     position: relative;
@@ -83,9 +89,11 @@ body {
 /* Start Welcome */
 .welcome {
     display: flex;
-    margin: 15px 30px;
-    width: 100%;
     flex-direction: column;
+    margin: 15px auto;
+    max-width: 1200px;
+    width: 95%;
+    padding: 0 15px;
 }
 
 .header,
@@ -180,4 +188,45 @@ body {
 .welcome__ctaLink:hover {
     opacity: 0.9;
     transition: 0.3ms;
+}
+
+/* start cta */
+.cta__sec {
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    padding: auto;
+    margin: auto auto 50px auto;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    color: var(--text-light);
+    width: 650px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.cta__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.cta__text{
+    text-align: center;
+}
+
+.cta__btn{
+    padding: 15px;
+    background-color: var(--primary-light);
+    border: 2px solid var(--accent-color);
+    margin: 15px;
+border-radius: 15px;
+font-size: 1rem;
+font-weight: 700;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+color: var(--text-light);
+font-family: var(--font-family);
 }
