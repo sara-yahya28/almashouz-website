@@ -19,53 +19,196 @@
     z-index: 1;
 }
 
-.hero__title {
+.hero__content {
     position: absolute;
-    top: 211px;
-    right: 125px;
-    transform: translate(-25%, 10%);
+    inset: 0;
+    /* يغطي كامل مساحة الأب */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero__title {
     color: var(--text-light);
     font-size: 2rem;
-    text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    margin-bottom: 10px;
 }
 
 .hero__text {
-    position: absolute;
-    top: 275px;
-    right: 400px;
     color: var(--text-light);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .hero__btn {
-    position: absolute;
-    top: 325px;
-    right: 725px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 50px;
-    height: 50px;
-    padding: 15px 30px;
-
-    color: var(--text-light);
     background-color: var(--accent-color);
-
     border: none;
     border-radius: 15px;
-
-    font-size: 1rem;
+    padding: 15px 30px;
+    color: var(--text-light);
     font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
-    z-index: 2;
+    transition: 0.3s;
+    width: auto;
+    /* لا تجعل العرض ثابتاً */
+    height: auto;
 }
 
 .hero__btn:hover {
     background-color: #f9a8258f;
     transition: 0.3s;
+}
+
+
+/* Start Welcome */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    max-width: 1200px;
+    width: 95%;
+    padding: 0 15px;
+}
+
+.header,
+.subtitle {
+    height: 50%;
+    text-align: center;
+}
+
+.header {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    opacity: 0.7;
+}
+
+
+.title-dividor {
+    width: 90%;
+    height: 2PX;
+    background-color: var(--accent-color);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.welcome__body {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.welcome__content {
+    margin-right: 50px;
+    width: 35%;
+}
+
+.welcome__text {
+    padding: 20px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+    border: 2px solid var(--accent-color);
+}
+
+.welcome__image {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-top: 15px;
+    border: 2px solid var(--secondry-color);
+}
+
+.welcome__list {
+    list-style: none;
+    background-color: var(--bg-dark);
+    border-radius: 15px;
+    width: 450px;
+    width: 100%;
+    padding: auto;
+}
+
+.welcome-listTitle {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.welcome__bulletPoints {
+    font-weight: 500;
+}
+
+.welcome__ctaLink {
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 15px;
+    background-color: var(--bg-dark);
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid var(--accent-color);
+    margin: auto;
+}
+
+.welcome__ctaLink:hover {
+    opacity: 0.9;
+    transition: 0.3ms;
+}
+
+/* start cta */
+.cta__sec {
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    padding: auto;
+    margin: auto auto 50px auto;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    color: var(--text-light);
+    width: 650px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.cta__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 25px;
+
+}
+
+.cta__text {
+    text-align: center;
+}
+
+.cta__btn {
+    padding: 15px;
+    background-color: var(--primary-light);
+    border: 2px solid var(--accent-color);
+    margin: 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+    color: var(--text-light);
+    font-family: var(--font-family);
 }
