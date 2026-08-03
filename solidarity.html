@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المشاريع التكافلية - صندوق المشاوز</title>
 
-    <!-- خط Tajawal من Google Fonts -->
+    <!-- الخطوط + ملفات CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- ملفات CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <!-- ===== القائمة العلوية (Navbar) ===== -->
+    <!-- ===== Navbar ===== -->
     <nav class="navbar">
         <a href="index.html">
             <img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo">
@@ -54,7 +53,7 @@
     <!-- ===== المحتوى الرئيسي ===== -->
     <main>
 
-        <!-- ===== قسم المشاريع التكافلية ===== -->
+        <!-- قسم المشاريع التكافلية -->
         <section class="projects-section">
 
             <!-- عنوان القسم -->
@@ -66,7 +65,7 @@
             <!-- شبكة البطاقات -->
             <div class="cards-grid">
 
-                <!-- ====== البطاقة 1: كفالة الأيتام ====== -->
+                <!-- بطاقة 1 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/orphan-care.jpg" alt="مشروع كفالة الأيتام">
@@ -78,7 +77,7 @@
                     </div>
                 </article>
 
-                <!-- ====== البطاقة 2: إفطار الصائم ====== -->
+                <!-- بطاقة 2 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/iftar-meal.jpg" alt="مشروع إفطار الصائم">
@@ -90,7 +89,7 @@
                     </div>
                 </article>
 
-                <!-- ====== البطاقة 3: كسوة العيد ====== -->
+                <!-- بطاقة 3 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/eid-clothing.jpg" alt="مشروع كسوة العيد">
@@ -102,7 +101,7 @@
                     </div>
                 </article>
 
-                <!-- ====== البطاقة 4: قضاء الديون ====== -->
+                <!-- بطاقة 4 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/debt-relief.jpg" alt="مشروع قضاء الديون">
@@ -114,7 +113,7 @@
                     </div>
                 </article>
 
-                <!-- ====== البطاقة 5: دعم المرضى ====== -->
+                <!-- بطاقة 5 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/patient-care.jpg" alt="مشروع دعم المرضى">
@@ -126,7 +125,7 @@
                     </div>
                 </article>
 
-                <!-- ====== البطاقة 6: توزيع الأضاحي ====== -->
+                <!-- بطاقة 6 -->
                 <article class="card-project">
                     <figure class="card-image">
                         <img src="images/qurbani.jpg" alt="مشروع توزيع الأضاحي">
@@ -138,11 +137,42 @@
                     </div>
                 </article>
 
-            </div> <!-- نهاية شبكة البطاقات -->
+            </div>
 
         </section>
 
     </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <img src="images/logo.webp" class="footer__logo" alt="">
+
+        <div class="footer__container">
+            <h2 class="footer__title">صندوق المشاوز التكافلي التنموي</h2>
+            <div class="footer__bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026</p>
+            </div>
+        </div>
+
+        <div class="footer__pages">
+            <h3 class="footer__subtitle">روابط سريعة</h3>
+            <ul class="footer__link">
+                <li><a href="index.html" class="footer__link footer__link--active">الرئيسية</a></li>
+                <li><a href="about.html" class="footer__link footer__link--active">عن الصندوق</a></li>
+                <li><a href="village.html" class="footer__link footer__link--active">عن القرية</a></li>
+                <li><a href="governance.html" class="footer__link footer__link--active">الحوكمة</a></li>
+                <li><a href="news.html" class="footer__link footer__link--active">الأخبار</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contact">
+            <h3 class="footer__contact--title">تواصل معنا</h3>
+            <p class="footer__info">الهاتف : 780810312</p>
+            <p class="footer__info">الموقع : قرية المشاوز - محافظة تعز, اليمن</p>
+            <a href="mailto:info@mashoazfund.org" class="footer__info">info@mashoazfund.org</a>
+        </div>
+
+    </footer>
 
 </body>
 
