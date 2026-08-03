@@ -10,11 +10,17 @@
     --font-family: 'Tajawal', sans-serif;
 }
 
-/* Start Hero Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-family);
 }
 
+/* Start Hero Section */
 .hero {
     width: 100%;
     position: relative;
@@ -83,9 +89,11 @@ body {
 /* Start Welcome */
 .welcome {
     display: flex;
-    margin: 15px 30px;
-    width: 100%;
     flex-direction: column;
+    margin: 15px auto;
+    max-width: 1200px;
+    width: 95%;
+    padding: 0 15px;
 }
 
 .header,

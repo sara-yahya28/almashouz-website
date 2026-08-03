@@ -1,5 +1,4 @@
 /*Start navbar */
-
 .navbar {
     width: auto;
     padding: 10px;
@@ -21,14 +20,20 @@
 }
 
 .navbar__link,
-.cta {
+.navbar__cta {
     text-decoration: none;
     color: var(--text-light);
     transition: 0.3s;
 }
 
+.navbar__cta{
+border: 3px solid var(--accent-color);
+border-radius: 15px;
+padding: 10px;
+}
+
 .navbar__link:hover,
-.cta:hover {
+.navbar__cta:hover {
     padding: 10px;
     background-color: #4CAF50;
     border-radius: 15px;
