@@ -22,7 +22,7 @@
 <body>
 
     <!-- Start navbar -->
-    <nav class="navbar">
+      <nav class="navbar">
         <a href="index.html"><img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo"></a>
         <!-- كود القائمة لشاشات الجوال (Hamburger Menu) -->
     <input type="checkbox" id="menu-toggle" class="navbar__checkbox">
@@ -47,53 +47,58 @@
             <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
             <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
             <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
-            
         </ul>
-        
     </nav>
 
-    <!-- Start News Content -->
-    <main class="form-container" style="max-width: 1100px;">
-        <div class="form-header">
-            <h2>أخبار القرية والمستجدات</h2>
-            <p>تابع آخر الأنشطة، المبادرات، والفعاليات المنفذة في قرية المشاوز</p>
-        </div>
+ <!-- Start News Content -->
+<main class="form-container news-container">
+    <div class="form-header">
+        <h2>أخبار القرية والمستجدات</h2>
+        <p>تابع آخر الأنشطة، المبادرات، والفعاليات المنفذة في قرية المشاوز</p>
+    </div>
 
-        <!-- شبكة عرض الأخبار -->
-        <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-            
-            <!-- خبر 1 -->
-            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
-                <img src="images/Stone sidewalk.jpg" alt="تدشين مشروع الرصف" style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">15 مايو 2026</span>
-                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">تدشين المرحلة الأولى من مشروع الرصف الحجري</h3>
-                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">بدأت الهيئة الإدارية بالتعاون مع أهالي القرية أعمال الرصف الطرقية لتسهيل حركة تنقل المواطنين والسيارات...</p>
-                </div>
-            </article>
+    <!-- شبكة عرض الأخبار -->
+            <div class="cards-grid">
+        
+      
 
-            <!-- خبر 2 -->
-            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
-                <img src="images/backPack.jpg" alt="توزيع الحقيبة المدرسية" style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">02 مايو 2026</span>
-                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">توزيع المستلزمات والحقائب المدرسية للطلاب</h3>
-                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">ضمن برنامج التكافل التعليمي، تم توزيع الحقائب المدرسية المتكاملة لطلاب وطالبات القرية لدعم الاستمرار التعليمي...</p>
-                </div>
-            </article>
+                <!-- بطاقة 4 -->
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/backPack.jpg" alt="مشروع توزيع حقائب">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع توزيع حقائب</h3>
+                        <p>تأهيل الفصول وتوفير المستلزمات المدرسية، ودعم المعلمين ببرامج تدريبية لضمان تعليم مستدام لأطفال القرية.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
 
-            <!-- خبر 3 -->
-            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
-                <img src="images/seedling.jpg" alt="حملة التشجير" style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">20 أبريل 2026</span>
-                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">اختتام حملة الغرس والتشجير المجتمعية</h3>
-                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">بجهود شبابية مباركة، تم غرس عشرات الشتلات الزراعية والمثمرة في المساحات العامة بالقرية لحماية البيئة...</p>
-                </div>
-            </article>
+                <!-- بطاقة 5 -->
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/seedling.jpg" alt="مشروع زراعة شتلة زراعية">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع زراعة شتلة زراعية</h3>
+                        <p>توزيع بذور محسّنة ومعدات زراعية، وتدريب المزارعين على تقنيات الري الحديث لتعزيز الإنتاجية والأمن الغذائي.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
 
-        </div>
-    </main>
+                <!-- بطاقة 6 -->
+                <article class="card-project">
+                    <figure class="card-image">
+                        <img src="images/Stone sidewalk.jpg" alt="مشروع رصيف حجري">
+                    </figure>
+                    <div class="card-body">
+                        <h3>مشروع رصيف حجري</h3>
+                        <p>إنشاء أرصفة حجرية لتسهيل الحركة وتحسين المظهر الحضاري للقرية.</p>
+                        <a href="#" class="btn-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+    </div>
+</main>
 
     <!-- Start Footer -->
     <footer class="footer">
