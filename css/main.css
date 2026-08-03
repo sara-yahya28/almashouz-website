@@ -133,13 +133,16 @@ body {
     font-size: 1rem;
     border-radius: 15px;
     margin-bottom: 30px;
-    width: 457px;
+    width: 100%;
+    box-sizing: border-box;
     font-weight: 500;
     border: 2px solid var(--accent-color);
 }
 
 .welcome__image {
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     margin-top: 15px;
     border: 2px solid var(--secondry-color);
 }
@@ -149,6 +152,7 @@ body {
     background-color: var(--bg-dark);
     border-radius: 15px;
     width: 450px;
+    width: 100%;
     padding: auto;
 }
 
@@ -176,4 +180,45 @@ body {
 .welcome__ctaLink:hover {
     opacity: 0.9;
     transition: 0.3ms;
+}
+
+/* start cta */
+.cta__sec {
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    padding: auto;
+    margin: auto auto 50px auto;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    color: var(--text-light);
+    width: 650px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.cta__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.cta__text{
+    text-align: center;
+}
+
+.cta__btn{
+    padding: 15px;
+    background-color: var(--primary-light);
+    border: 2px solid var(--accent-color);
+    margin: 15px;
+border-radius: 15px;
+font-size: 1rem;
+font-weight: 700;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
+color: var(--text-light);
+font-family: var(--font-family);
 }

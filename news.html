@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخبار القرية والمستجدات - صندوق المشاوز التكافلي التنموي</title>
+    
+    <!-- ملفات التنسيق الموحدة للمشروع -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/forms.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Start navbar -->
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo.webp" alt="شعار الصندوق" class="navbar__logo"></a>
+        <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
+            <li><a href="village.html" class="navbar__link">عن القرية</a></li>
+            <li><a href="team.html" class="navbar__link">عن الفريق</a></li>
+            <li class="navbar__link navbar__link--dropdown">
+                <a href="projects.html" class="navbar__link">المشاريع</a>
+                <ul class="navbar__dropdown">
+                    <li><a href="solidarity.html" class="navbar__link">المشاريع التكافلية</a></li>
+                    <li><a href="projects.html" class="navbar__link">المشاريع التنموية</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html" class="navbar__link navbar__link--active">الاخبار</a></li>
+            <li><a href="governance.html" class="navbar__link">الحوكمة</a></li>
+            <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+            <li><a href="about.html" class="navbar__link">عن الصندوق</a></li>
+        </ul>
+        <a href="contribute.html" class="cta">ساهم معنا</a>
+    </nav>
+
+    <!-- Start News Content -->
+    <main class="form-container" style="max-width: 1100px;">
+        <div class="form-header">
+            <h2>أخبار القرية والمستجدات</h2>
+            <p>تابع آخر الأنشطة، المبادرات، والفعاليات المنفذة في قرية المشاوز</p>
+        </div>
+
+        <!-- شبكة عرض الأخبار -->
+        <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+            
+            <!-- خبر 1 -->
+            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
+                <img src="images/Stone sidewalk.jpg" alt="تدشين مشروع الرصف" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">15 مايو 2026</span>
+                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">تدشين المرحلة الأولى من مشروع الرصف الحجري</h3>
+                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">بدأت الهيئة الإدارية بالتعاون مع أهالي القرية أعمال الرصف الطرقية لتسهيل حركة تنقل المواطنين والسيارات...</p>
+                </div>
+            </article>
+
+            <!-- خبر 2 -->
+            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
+                <img src="images/backPack.jpg" alt="توزيع الحقيبة المدرسية" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">02 مايو 2026</span>
+                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">توزيع المستلزمات والحقائب المدرسية للطلاب</h3>
+                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">ضمن برنامج التكافل التعليمي، تم توزيع الحقائب المدرسية المتكاملة لطلاب وطالبات القرية لدعم الاستمرار التعليمي...</p>
+                </div>
+            </article>
+
+            <!-- خبر 3 -->
+            <article class="news-card" style="border: 1px solid #eef0f2; border-radius: 10px; overflow: hidden; background: #fff;">
+                <img src="images/seedling.jpg" alt="حملة التشجير" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <span style="font-size: 0.85rem; color: #27ae60; font-weight: 600;">20 أبريل 2026</span>
+                    <h3 style="color: #2c3e50; font-size: 1.2rem; margin: 10px 0;">اختتام حملة الغرس والتشجير المجتمعية</h3>
+                    <p style="color: #6c757d; font-size: 0.95rem; line-height: 1.6;">بجهود شبابية مباركة، تم غرس عشرات الشتلات الزراعية والمثمرة في المساحات العامة بالقرية لحماية البيئة...</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <img src="images/logo.webp" class="footer__logo" alt="شعار الصندوق">
+        <div class="footer__container">
+            <h2 class="footer__title">صندوق المشاوز التكافلي التنموي</h2>
+            <div class="footer__bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026 </p>
+            </div>
+        </div>
+
+        <div class="footer__pages">
+            <h3 class="footer__subtitle">روابط سريعة</h3>
+            <ul class="footer__link">
+                <li><a href="index.html" class="footer__link footer__link--active">الرئيسية</a></li>
+                <li><a href="about.html" class="footer__link footer__link--active">عن الصندوق</a></li>
+                <li><a href="village.html" class="footer__link footer__link--active">عن القرية</a></li>
+                <li><a href="governance.html" class="footer__link footer__link--active">الحوكمة</a></li>
+                <li><a href="news.html" class="footer__link footer__link--active">الاخبار</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contact">
+            <h3 class="footer__contact--title">تواصل معنا</h3>
+            <p class="footer__info">الهاتف : 780810312</p>
+            <p class="footer__info">الموقع : قرية المشاوز - محافظة تعز, اليمن</p>
+            <a href="mailto:info@mashoazfund.org" class="footer__info"> البريد الالكتروني : info@mashoazfund.org </a>
+        </div>
+    </footer>
+
+</body>
+</html>
