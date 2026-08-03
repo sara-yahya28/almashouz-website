@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
-/* ===== آخر تحديث: تحسين تنظيم الكود ===== */
+/* ===== إعادة تعيين الهوامش العامة ===== */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,11 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
-/* ===== تصميم البطاقة الأساسية (Card Project) ===== */
+/* =============================================
+   ١. بطاقات المشاريع (التنموية والتكافلية)
+   ============================================= */
+
+/* الحاوية الخارجية للبطاقة الواحدة */
 .card-project {
     background-color: var(--bg-light, #F5F5F5);
     border-radius: 16px;
@@ -27,7 +31,7 @@ body {
     text-align: right;
 }
 
-/* ===== تنسيق إطار الصورة ===== */
+/* إطار الصورة (محدد الارتفاع) */
 .card-project .card-image {
     width: 100%;
     height: 200px;
@@ -35,6 +39,7 @@ body {
     overflow: hidden;
 }
 
+/* الصورة نفسها (تغطي الإطار بدون تشوه) */
 .card-project .card-image img {
     width: 100%;
     height: 100%;
@@ -43,7 +48,7 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* ===== تنسيق جسم البطاقة (العنوان والوصف والزر) ===== */
+/* جسم البطاقة (النصوص والزر) */
 .card-project .card-body {
     padding: 1.5rem 1.2rem 1.8rem;
     flex: 1;
@@ -52,6 +57,7 @@ body {
     gap: 0.8rem;
 }
 
+/* عنوان المشروع */
 .card-project .card-body h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -60,6 +66,7 @@ body {
     line-height: 1.3;
 }
 
+/* وصف المشروع المختصر */
 .card-project .card-body p {
     font-size: 1rem;
     color: var(--text-dark, #212121);
@@ -71,7 +78,7 @@ body {
     margin-bottom: 0;
 }
 
-/* ===== الزر الأساسي ===== */
+/* زر "اقرأ المزيد" */
 .card-project .btn-more {
     align-self: flex-start;
     background-color: var(--secondary-color, #1565C0);
@@ -88,29 +95,23 @@ body {
     letter-spacing: 0.3px;
     box-shadow: 0 4px 8px rgba(21, 101, 192, 0.2);
     -webkit-tap-highlight-color: transparent;
-    /* إلغاء التظليل الأزرق على الجوال */
 }
 
-/* ===== تأثير الضغط (يعمل على الكمبيوتر والجوال معاً) ===== */
+/* تأثير الضغط (للكمبيوتر والجوال) */
 .card-project .btn-more:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
 
-/* ============================================================
-   جميع تأثيرات التمرير (Hover) - تعمل فقط على أجهزة الكمبيوتر
-   ============================================================ */
+/* تأثير المرور بالماوس (فقط للكمبيوتر) */
 @media (hover: hover) {
-
     .card-project:hover {
         transform: translateY(-8px);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
     }
-
     .card-project:hover .card-image img {
         transform: scale(1.05);
     }
-
     .card-project .btn-more:hover {
         background-color: var(--primary-color, #2E7D32);
         transform: scale(1.03);
@@ -118,60 +119,59 @@ body {
     }
 }
 
-/* ===== جعل البطاقة متجاوبة مع شاشة الجوال ===== */
+/* شكل البطاقة على شاشات الجوال */
 @media (max-width: 600px) {
     .card-project {
         max-width: 100%;
         border-radius: 12px;
     }
-
     .card-project .card-image {
         height: 180px;
     }
-
     .card-project .card-body h3 {
         font-size: 1.3rem;
     }
-
     .card-project .card-body p {
         font-size: 0.95rem;
     }
-
     .card-project .btn-more {
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
         width: 100%;
         text-align: center;
         align-self: stretch;
-        /* لجعل الزر ممتداً بالكامل في الجوال */
     }
 }
 
-/* ========================================
-   تنسيقات عناوين الأقسام (مشتركة بين الصفحات)
-   ======================================== */
+/* =============================================
+   ٢. عناوين الأقسام الرئيسية (مشتركة للجميع)
+   ============================================= */
 
+/* حاوية العنوان (لأقسام مثل: المشاريع، الفريق) */
 .section-title {
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
+/* العنوان الكبير (h2) */
 .section-title h2 {
     font-size: 2.5rem;
     color: var(--primary-color, #2E7D32);
     margin-bottom: 0.5rem;
 }
 
+/* النص الوصفي تحت العنوان */
 .section-title p {
     font-size: 1.1rem;
     color: var(--text-dark, #212121);
     opacity: 0.7;
 }
 
-/* ========================================
-   شبكة البطاقات
-   ======================================== */
+/* =============================================
+   ٣. شبكة ترتيب البطاقات
+   ============================================= */
 
+/* الشبكة التي توزع البطاقات (تلقائية) */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -180,15 +180,17 @@ body {
     margin: 0 auto;
 }
 
-/* ========================================
-   تنسيق القسم الخارجي للمشاريع
-   ======================================== */
-
+/* القسم الخارجي الذي يحتوي الشبكة */
 .projects-section {
     padding: 3rem 1.5rem;
     background-color: var(--bg-light, #F5F5F5);
 }
 
+/* =============================================
+   ٤. بطاقات الإنجازات / الإحصائيات (الأرقام)
+   ============================================= */
+
+/* حاوية الرقم والإحصائية */
 .card__stats {
     width: 150px;
     display: flex;
@@ -196,19 +198,23 @@ body {
     /* background-color: var(--primary-color); */
 }
 
-.card__text,.card__counter{
+/* النص المكتوب (مثل "مشروع") والرقم */
+.card__text,
+.card__counter {
     font-weight: 700;
 }
 
+/* النص المكتوب فقط */
 .card__text {
     margin: 0;
     width: 50px;
 }
-/* ============================================
-   بطاقات أعضاء الفريق (تُستخدم في team.html)
-   ============================================ */
 
-/* الحاوية الرئيسية لشبكة أعضاء الفريق */
+/* =============================================
+   ٥. بطاقات فريق العمل (الدائرية)
+   ============================================= */
+
+/* الشبكة الخاصة بترتيب أعضاء الفريق */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -218,7 +224,7 @@ body {
     justify-items: center;
 }
 
-/* البطاقة الدائرية للعضو */
+/* بطاقة العضو الواحد */
 .card-member {
     background-color: var(--bg-light, #F5F5F5);
     border-radius: 20px;
@@ -234,7 +240,7 @@ body {
     direction: rtl;
 }
 
-/* تأثير التمرير للبطاقة (يعمل فقط على الكمبيوتر) */
+/* تأثير التمرير لبطاقة العضو (فقط للكمبيوتر) */
 @media (hover: hover) {
     .card-member:hover {
         transform: translateY(-6px);
@@ -242,7 +248,7 @@ body {
     }
 }
 
-/* إطار الصورة الدائرية */
+/* إطار الصورة الدائري */
 .card-member .member-image {
     width: 120px;
     height: 120px;
@@ -254,6 +260,7 @@ body {
     background-color: var(--bg-dark);
 }
 
+/* الصورة داخل الإطار الدائري */
 .card-member .member-image img {
     width: 100%;
     height: 100%;
@@ -262,7 +269,7 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* تكبير الصورة عند تمرير الماوس (للكمبيوتر فقط) */
+/* تكبير الصورة عند التمرير (فقط للكمبيوتر) */
 @media (hover: hover) {
     .card-member:hover .member-image img {
         transform: scale(1.08);
@@ -287,7 +294,7 @@ body {
     margin: 0;
 }
 
-/* ===== تنسيق عناوين الأقسام (الهيئة الإدارية / اللجنة الرقابية) ===== */
+/* عناوين الأقسام الداخلية (الهيئة الإدارية / اللجنة الرقابية) */
 .team-section-title {
     text-align: center;
     font-size: 1.8rem;
@@ -299,30 +306,27 @@ body {
     padding: 0 1rem;
 }
 
+/* الحاوية التي توسّط العنوان الداخلي */
 .team-section-wrapper {
     text-align: center;
 }
 
-/* ===== تجاوب بطاقات الفريق مع الجوال ===== */
+/* شكل بطاقات الفريق على الجوال */
 @media (max-width: 600px) {
     .card-member {
         max-width: 160px;
         padding: 1rem 0.8rem 1.2rem;
     }
-
     .card-member .member-image {
         width: 90px;
         height: 90px;
     }
-
     .card-member .member-name {
         font-size: 1rem;
     }
-
     .card-member .member-role {
         font-size: 0.8rem;
     }
-
     .team-grid {
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
